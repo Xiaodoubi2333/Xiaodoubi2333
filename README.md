@@ -33,7 +33,7 @@ Java / Android 出身，做过一点全栈。习惯把课程项目当成真项�
 |---|---|---|
 | [bilibili-hide-viewcount](https://github.com/Xiaodoubi2333/bilibili-hide-viewcount) | 隐藏 B 站播放页的观看人数与弹幕数量 | Chrome Extension MV3 |
 
-另有三个私有项目：A 股行情监控服务（[astock-console](https://github.com/Xiaodoubi2333/astock-console)，Python 服务端 + 前端监控台 + LLM 反代）、苍穹外卖后端（[sky-takeout-server](https://github.com/Xiaodoubi2333/sky-takeout-server)，Spring Boot 三模块）、C# 五子棋（[gomoku-ai-csharp](https://github.com/Xiaodoubi2333/gomoku-ai-csharp)，遗传算法对手）。
+另有三个私有项目：`astock-console`（A 股行情监控服务，Python 服务端 + 前端监控台 + LLM 反代）、`sky-takeout-server`（苍穹外卖后端，Spring Boot 三模块）、`gomoku-ai-csharp`（C# 五子棋，遗传算法对手）。
 
 ## 技术栈
 
