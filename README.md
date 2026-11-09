@@ -6,29 +6,34 @@ Java / Android 出身，做过一点全栈。习惯把课程项目当成真项�
 
 ## 项目索引
 
-### Android 天气应用 · 六个演进阶段
+### Android 天气应用
 
-同一套教材代码的六个断面，按时间顺序看能看出「能编译 → 有界面 → 有数据 → 有导航 → 有收藏」的过程。
+一个功能完整的应用，加一条由浅入深的演进链。从编译跑通到收藏夹落地，每一版都能单独运行。
 
-| 阶段 | 仓库 | 说明 |
-|---|---|---|
-| 1 | [oldWeatherAPP](https://github.com/Xiaodoubi2333/oldWeatherAPP) | 最早一版骨架：LitPal 省市县三表 + 空壳主界面 |
-| 2 | [CoolWeather](https://github.com/Xiaodoubi2333/CoolWeather) | 教材复刻：课本级 Gradle 环境与地区选择界面 |
-| 3 | [sourceCoolWeather](https://github.com/Xiaodoubi2333/sourceCoolWeather) | 原始源码基线，供逐行对照 |
-| 4 | [WeatherAPP](https://github.com/Xiaodoubi2333/WeatherAPP) | 功能完整版：实时天气、预报、AQI、生活建议、后台刷新 |
-| 5 | [fragmentWeatherAPP](https://github.com/Xiaodoubi2333/fragmentWeatherAPP) | 导航 + 天气双栈：四页签 + 详情页 |
-| 6 | [naviCoolWeatherAPP](https://github.com/Xiaodoubi2333/naviCoolWeatherAPP) | 成品：SQLite 城市收藏夹、下拉刷新、手动换城市 |
+| 仓库 | 说明 |
+|---|---|
+| [android-weather-app](https://github.com/Xiaodoubi2333/android-weather-app) | 完整应用：省市县三级选择、实时天气与预报、AQI 与生活建议、后台每 8 小时刷新 |
+| [android-weather-01-skeleton](https://github.com/Xiaodoubi2333/android-weather-01-skeleton) | 演进 01 · 骨架：LitPal 三张地区表 + 空壳主界面 |
+| [android-weather-02-textbook](https://github.com/Xiaodoubi2333/android-weather-02-textbook) | 演进 02 · 教材复刻：课本级 Gradle 环境与地区选择界面 |
+| [android-weather-03-source](https://github.com/Xiaodoubi2333/android-weather-03-source) | 演进 03 · 源码基线：教材原始结构，供逐行对照 |
+| [android-weather-04-fragments](https://github.com/Xiaodoubi2333/android-weather-04-fragments) | 演进 04 · 双栈合并：四页签导航 + 完整天气模块 |
+| [android-weather-05-navigation](https://github.com/Xiaodoubi2333/android-weather-05-navigation) | 演进 05 · 成品：SQLite 城市收藏夹（增删查改）+ 下拉刷新 + 手动换城市 |
 
-### 其它
+### Android 基础练习
 
 | 仓库 | 说明 | 技术 |
 |---|---|---|
-| [bilibili-Ignored](https://github.com/Xiaodoubi2333/bilibili-Ignored) | 隐藏 B 站播放页的观看人数与弹幕数量 | Chrome Extension MV3 |
-| [BN](https://github.com/Xiaodoubi2333/BN) | 底部导航栏练习：四页签 + 视图复用 | Android Navigation |
-| [listViewMethod](https://github.com/Xiaodoubi2333/listViewMethod) | 自定义 ListView 适配器与 ViewHolder | Android |
-| [mysqlconnectiontest](https://github.com/Xiaodoubi2333/mysqlconnectiontest) | Android 直连 MySQL 的连通性实验（反模式，仅教学） | JDBC |
+| [android-bottom-navigation](https://github.com/Xiaodoubi2333/android-bottom-navigation) | 底部导航四页签，每页独立 ViewModel，列表视图复用 | Navigation Component |
+| [android-listview-adapter](https://github.com/Xiaodoubi2333/android-listview-adapter) | 自定义 `ArrayAdapter` + `ViewHolder`，实体列表渲染 | ListView |
+| [android-jdbc-mysql-demo](https://github.com/Xiaodoubi2333/android-jdbc-mysql-demo) | 直连 MySQL 的连通性实验，用来回答「手机能不能直接连库」 | JDBC |
 
-另有若干私有项目：A 股行情监控服务（Python 服务端 + 前端监控台、LLM 反代）、苍穹外卖后端完整实现（Spring Boot 三模块）、C# 五子棋（遗传算法对手）。
+### 工具
+
+| 仓库 | 说明 | 技术 |
+|---|---|---|
+| [bilibili-hide-viewcount](https://github.com/Xiaodoubi2333/bilibili-hide-viewcount) | 隐藏 B 站播放页的观看人数与弹幕数量 | Chrome Extension MV3 |
+
+另有三个私有项目：A 股行情监控服务（[astock-console](https://github.com/Xiaodoubi2333/astock-console)，Python 服务端 + 前端监控台 + LLM 反代）、苍穹外卖后端（[sky-takeout-server](https://github.com/Xiaodoubi2333/sky-takeout-server)，Spring Boot 三模块）、C# 五子棋（[gomoku-ai-csharp](https://github.com/Xiaodoubi2333/gomoku-ai-csharp)，遗传算法对手）。
 
 ## 技术栈
 
@@ -43,6 +48,8 @@ Java / Android 出身，做过一点全栈。习惯把课程项目当成真项�
 ## 关于这些仓库
 
 README 统一按同一套结构写：定位、文件结构、启动方式、功能落点表、版本记录、已知限制。落点表里的类名和方法名都能在源码里找到，不是概括性描述。
+
+提交信息统一为 Conventional Commits（`feat` / `fix` / `refactor` / `chore` / `docs`），每条对应一个可复述的改动，不再有「第 N 次提交」这类占位。
 
 课程项目里的接口密钥、数据库口令一律标在「已知限制」里提醒，不写具体值。
 
